@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* header */
+  
+  .header {
+    background: #fff;
+    padding: 45px 30px 18px;
+  }
+  
+  .header_container_logos {
+    margin: 0 auto;
+    width: 1300px;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .header_logo {
+    padding-right: 37px;
+  }
+  
+  .header_container_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header_title_line {
+    width: 386px;
+    height: 7px;
+    color: #df96b3;
+    padding-top: 42px;
+  }
+  
+  .header_title {
+    color: #df96b3;
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 1.4em;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 35px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+  }
+  
+  .header_title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 46%;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: #df96b3;
+    width: 100%;
+  }
+  
+  .header_container_item {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .list_link {
+    font-family: "Playfair Display";
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    text-decoration: none;
+    padding-right: 40px;
+  }
+  
+  .list_link:hover {
+    color: #df96b3;
+  }
+  
+  .list_link:last-of-type {
+    padding-right: 0px;
+  }
+  
+  .header_list {
+    padding-bottom: 17px;
+  }
+  
+  /* travelling main */
+  
+  .travelling_main {
+    background: #f3f3f3;
+  }
+  
+  .travelling_container {
+    padding: 55px 0 50px;
+    margin: 0 auto;
+    text-align: center;
+    width: 1100px;
+    border-top: 1px solid #f1a2b8;
+  }
+  
+  .travelling_title {
+    padding-bottom: 70px;
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 155px;
+    line-height: 86px;
+    color: #000000;
+  }
+  
+  .travelling_text {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+  }
+
+
+/* travelling_grid */
+
+.travelling_grid{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-areas:
+    "one two"
+    "one four"
+    "three four"
+    "five five";
+    grid-gap: 30px;
+    position: relative;
+    
+  }
+  
+  .choice_image{
+  object-fit: contain;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+
+.first_text{
+  position: absolute;
+  top: 0;
+}
+.second_text{
+  position: absolute;
+  top: 0;
+}
+
+.third_text{
+  position: absolute;
+  top: 0;
+}
+
+.fourth_text{
+  position: absolute;
+  top: 0;
+}
+
+.fiveth_text{
+  position: absolute;
+  top: 0;
+}

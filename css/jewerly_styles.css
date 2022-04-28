@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+.header {
+  background: #fff;
+  padding: 45px 30px 18px;
+}
+
+.header_container_logos {
+  margin: 0 auto;
+  width: 1300px;
+  display: flex;
+  justify-content: end;
+}
+
+.header_logo {
+  padding-right: 37px;
+}
+
+.header_container_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_title_line {
+  width: 386px;
+  height: 7px;
+  color: #df96b3;
+  padding-top: 42px;
+}
+
+.header_title {
+  color: #df96b3;
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 1.4em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 35px;
+  font-family: "Playfair Display";
+  font-weight: bold;
+}
+
+.header_title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 46%;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: #df96b3;
+  width: 100%;
+}
+
+.header_container_item {
+  display: flex;
+  justify-content: center;
+}
+
+.list_link {
+  font-family: "Playfair Display";
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  text-decoration: none;
+  padding-right: 40px;
+}
+
+.list_link:hover {
+  color: #df96b3;
+}
+
+.list_link:last-of-type {
+  padding-right: 0px;
+}
+
+.header_list {
+  padding-bottom: 17px;
+}
+
+/* jewerly main */
+
+.jewerly_main {
+  background: #f3f3f3;
+  margin-bottom: 105px;
+}
+
+.jewerly_container {
+  padding: 55px 0 50px;
+  margin: 0 auto;
+  text-align: center;
+  width: 1000px;
+  border-top: 1px solid #f1a2b8;
+}
+
+.main_title {
+  padding-bottom: 90px;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 155px;
+  line-height: 86px;
+  color: #000000;
+}
+
+.main_text {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+/* grid_container */
+
+.grid_container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "one two three four"
+    "five six main_pic main_pic"
+    "nine ten main_pic main_pic";
+  grid-gap: 10px;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seveneight {
+  grid-area: main_pic;
+  object-fit: cover;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.ten {
+  grid-area: ten;
+}
+
+.grid_item {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+.grid__body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  transition: all ease-in-out 0.8s;
+  background: #fff;
+  border: 1px solid #000000;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+  -webkit-tranform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.grid__body li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  max-width: 300px;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.grid img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.grid_img {
+  transition: all ease-in-out 0.8s;
+  cursor: pointer;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: visible;
+}
+
+.grid_item:hover .grid__body {
+  -webkit-tranform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.grid_item:hover .grid_img {
+  -webkit-tranform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.grid_title {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* new collection */
+
+.new_collection {
+  padding-top: 83px;
+  width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.new_collection_img {
+  box-sizing: border-box;
+  object-fit: cover;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.new_collection_container_text {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  right: 0;
+  background: #ffffff;
+  width: 383px;
+  height: 130px;
+  padding: 30px;
+}
+
+.one,
+.two {
+  font-family: "Playfair Display";
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 1px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  /* padding: 20px; */
+}
+
+.new_collection_text {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: #b4957c;
+  padding: 40px 20px;
+}
+
+/* classic */
+
+.classic {
+  padding-top: 83px;
+  width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.classic_img {
+  box-sizing: border-box;
+  object-fit: cover;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.classic_container_text {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  right: 0;
+  background: #ffffff;
+  width: 383px;
+  height: 130px;
+  padding: 30px;
+}
+
+.one1,
+.two2 {
+  font-family: "Playfair Display";
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 1px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  padding: 20px;
+}
+
+.classic_text {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: #b4957c;
+  padding: 40px 20px;
+}
+
+.happy_container {
+  padding: 100px 0 185px 0;
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.happy_container li {
+  list-style: none;
+}
+
+.happy_container img {
+  max-width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.happy_container_happiness {
+  width: 600px;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.happines_red_title {
+  color: #b00000;
+  font-weight: 900;
+  font-size: 67px;
+  font-style: italic;
+}
+
+.happy_container_jewels {
+  position: relative;
+}
+
+.happy_jewels_img {
+  z-index: 1;
+}
+
+.happy_jewels_text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 29px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 30px 0px 30px 10px;
+}
+
+.happy_container_values {
+  position: relative;
+}
+
+.happy_values_img {
+  z-index: 1;
+}
+
+.happy_values_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 29px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 30px 40px 30px 0px;
+}
+
+/* footer */
+
+.grey_line_footer {
+  height: 31px;
+  background: #e2e1e1;
+}
+
+.footer_container {
+  padding: 22px 0 42px; 
+  width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list_footer {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.list_footer img {
+  padding-right: 41px;
+}
+
+.logo_footer {
+  padding-right: 0px;
+}
+
+.footer_title {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 86px;
+  color: #e2e1e1;
+}
+
+
+.footer_credits{
+  background: #E2E1E1;
+}
+
+.credits_list {
+  padding: 50px 0 70px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.credits_list a{
+  align-items: center;
+  font-family: "Playfair Display";
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.copyrights{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-family: "Playfair Display";
+  font-size: 15px;
+  color: #000000;
+  padding-bottom: 30px;
+}
+

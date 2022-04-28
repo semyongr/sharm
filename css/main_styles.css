@@ -1,0 +1,667 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+.header {
+  background: #fff;
+  padding: 45px 30px 18px;
+}
+
+.header_container_logos {
+  margin: 0 auto;
+  width: 1300px;
+  display: flex;
+  justify-content: end;
+}
+
+.header_logo {
+  padding-right: 37px;
+}
+
+.header_container_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_title_line {
+  width: 386px;
+  height: 7px;
+  color: #df96b3;
+  padding-top: 42px;
+}
+
+.header_title {
+  color: #df96b3;
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 1.4em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 35px;
+  font-family: "Playfair Display";
+  font-weight: bold;
+}
+
+.header_title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 46%;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: #df96b3;
+  width: 100%;
+}
+
+.header_container_item {
+  display: flex;
+  justify-content: center;
+}
+
+.list_link {
+  font-family: "Playfair Display";
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  text-decoration: none;
+  padding-right: 40px;
+}
+
+.list_link:hover {
+  color: #df96b3;
+}
+
+.list_link:last-of-type {
+  padding-right: 0px;
+}
+
+.header_list {
+  padding-bottom: 17px;
+}
+
+/* main sharm container */
+
+.main {
+  margin: 50px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.main__container {
+  border-top: 1px solid #f1a2b8;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  height: 725px;
+}
+
+.main__container_item {
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.pic {
+  z-index: 4;
+  margin-top: 24px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main__title {
+  z-index: 3;
+  position: absolute;
+  top: 22%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 86px;
+  color: #000000;
+  font-family: "Playfair Display";
+  font-style: italic;
+}
+
+.main__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  z-index: 5;
+  position: absolute;
+  top: 10%;
+  right: -88px;
+  font-size: 80px;
+  line-height: 32px;
+  color: #f1a2b8;
+}
+
+.main_dots {
+  z-index: -2;
+  position: absolute;
+  bottom: -30px;
+  right: -200px;
+  object-fit: cover;
+  max-width: 90%;
+}
+
+/* about journal */
+
+.container_about_journal {
+  position: relative;
+  width: 1000px;
+  height: 1069px;
+  margin: 0 auto;
+}
+
+.background_about_journal {
+  height: 470px;
+  width: 1000px;
+  background: #f3f3f3;
+  position: absolute;
+  left: 20%;
+}
+
+.text_about {
+  position: absolute;
+  width: 550px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 200px;
+}
+
+.double_pic {
+  z-index: 3;
+  position: absolute;
+  right: 250px;
+  top: 200px;
+  max-width: 90%;
+}
+
+.year_about {
+  position: absolute;
+  bottom: 55%;
+  right: -12%;
+  font-family: "Playfair Display Italic";
+  font-size: 144px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #c23323;
+}
+
+.little_text_about {
+  position: absolute;
+  bottom: 45%;
+  right: -15%;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+
+.button_about {
+  width: 266px;
+  height: 75px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 22%;
+  right: -12%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  cursor: pointer;
+}
+
+.about_dots {
+  position: absolute;
+  bottom: 5%;
+  right: 28%;
+  max-width: 50%;
+}
+
+/* shop */
+
+.container_newcollection {
+  position: relative;
+  height: 248px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.title_newcollection {
+  position: absolute;
+  writing-mode: vertical-lr;
+  right: -12%;
+  top: -10%;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.container_shop {
+  max-width: 1424px;
+  margin: 0 auto;
+}
+
+.shop_title {
+  margin-left: 100px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.images_shop {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 100px 20px;
+  box-sizing: border-box;
+}
+
+.images_shop img {
+  object-fit: cover;
+  width: 23%;
+  height: 572px;
+}
+
+.images_shop > img:nth-child(2) {
+  margin: 0 60px;
+}
+
+.container_square_text {
+  width: 25%;
+}
+
+.shop_square {
+  width: 173px;
+  height: 173px;
+  background: #d26760;
+  display: flex;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.shop_text {
+  width: 300px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin: 40px 0 0 13px;
+}
+
+.container_shop_btn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 275px;
+}
+
+.button_shop {
+  width: 266px;
+  height: 75px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* jewerly */
+
+.jewerly_container {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.jewerly_left_container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.jewerly_title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-align: center;
+  font-size: 54px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  padding-bottom: 40px;
+}
+
+.jewerly_text_container {
+  width: 100%;
+  background-color: #f3f3f3;
+  height: 300px;
+  padding: 20px 0;
+}
+
+.jewerly_text_left {
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  width: 310px;
+  margin: 65px auto;
+}
+
+.jewerly_btn {
+  display: block;
+  margin: 0 auto;
+  width: 266px;
+  line-height: 75px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  cursor: pointer;
+}
+
+.jewerly_pic {
+  z-index: 2;
+}
+
+.jewerly_right_container {
+  position: relative;
+  width: 50%;
+}
+
+.jewerly_dots {
+  position: absolute;
+  /* top: 50%; */
+  bottom: -20px;
+  right: 10px;
+  z-index: -1;
+  max-width: 60%;
+}
+
+.fuck {
+  max-width: 1400px;
+  padding: 0 60px;
+  margin: 80px auto 80px;
+}
+
+.jewerly_text_right {
+  margin-left: auto;
+  font-family: "Montserrat";
+  width: 100px;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+/* travel */
+
+.travel_container {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.travel_title_large {
+  position: absolute;
+  writing-mode: vertical-lr;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 130px;
+  line-height: 1px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+  left: 10%;
+  z-index: 3;
+}
+
+.travel_title_small {
+  position: absolute;
+  right: 55px;
+  bottom: -164px;
+  font-family: "Playfair Display";
+  font-size: 64px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  z-index: 3;
+}
+.travel_image {
+  position: absolute;
+  object-fit: cover;
+  max-width: 62%;
+  top: 176px;
+  left: 154px;
+  z-index: 2;
+}
+
+.grey_square_1 {
+  position: absolute;
+  height: 320px;
+  width: 320px;
+  background: #f3f3f3;
+  right: 235px;
+  top: -29px;
+  z-index: 1;
+}
+
+.travel_btn {
+  width: 266px;
+  height: 75px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  cursor: pointer;
+  position: absolute;
+  top: 355px;
+  right: 58px;
+  z-index: 2;
+}
+
+.grey_square_2 {
+  position: absolute;
+  height: 320px;
+  width: 320px;
+  background: #f3f3f3;
+  right: 58px;
+  top: 430px;
+  z-index: 1;
+}
+
+.stars {
+  padding-top: 1000px;
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  z-index: 2;
+}
+
+/* .stars_dots{
+  position: absolute;
+  z-index: 1;
+} */
+
+.stars_title {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  padding-bottom: 80px;
+}
+
+.stars_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.first_star_pic {
+  box-sizing: border-box;
+  object-fit: cover;
+  max-width: 80%;
+  padding-bottom: 60px;
+}
+
+.first_star_text {
+  width: 350px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.second_star_pic {
+  object-fit: cover;
+  box-sizing: border-box;
+  max-width: 90%;
+  padding-bottom: 60px;
+}
+
+.second_star_text {
+  width: 330px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.btn_stars {
+  display: block;
+  margin: 0 auto;
+  width: 266px;
+  line-height: 75px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  cursor: pointer;
+  margin: 70px auto 153px auto;
+}
+
+/* footer */
+
+.grey_line_footer {
+  height: 31px;
+  background: #e2e1e1;
+}
+
+.footer_container {
+  padding: 22px 0 42px; 
+  width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list_footer {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.list_footer img {
+  padding-right: 41px;
+}
+
+.logo_footer {
+  padding-right: 0px;
+}
+
+.footer_title {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 86px;
+  color: #e2e1e1;
+}
+
+
+.footer_credits{
+  background: #E2E1E1;
+}
+
+.credits_list {
+  padding: 50px 0 70px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.credits_list a{
+  align-items: center;
+  font-family: "Playfair Display";
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.copyrights{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-family: "Playfair Display";
+  font-size: 15px;
+  color: #000000;
+  padding-bottom: 30px;
+}

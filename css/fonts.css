@@ -1,0 +1,14 @@
+@font-face{
+    font-family: "Playfair Display";
+    src: url("../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf") format(ttf);
+}
+
+@font-face {
+    font-family: "Playfair Display Italic";
+    src: url("../assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf") format(ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat-Regular.ttf") format(ttf);
+}
