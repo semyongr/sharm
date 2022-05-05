@@ -122,12 +122,13 @@
 /* travelling_grid */
 
 .travelling_grid {
-  margin: 100px 0;
+  margin-top: 80px;
+  margin-bottom: 100px;
   position: relative;
 }
 
 .travelling_grid_title {
-  margin: 100px 0;
+  margin-bottom: 60px;
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
@@ -158,6 +159,7 @@
     "three four"
     "five five";
   grid-gap: 30px;
+  position: relative;
 }
 
 .grid_container img {
@@ -166,6 +168,7 @@
 
 .one {
   grid-area: one;
+  position: relative;
 }
 .two {
   grid-area: two;
@@ -180,26 +183,237 @@
   grid-area: five;
 }
 
-.first_text {
+.text {
+  width: 280px;
+  text-align: center;
   position: absolute;
-  top: 0;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 30px;
+  /* or 75% */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+
+.first_text {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.35);
+  top: 13%;
+  left: 8%;
 }
 .second_text {
-  position: absolute;
-  top: 0;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.35);
+  top: 20%;
+  right: 8%;
 }
 
 .third_text {
-  position: absolute;
-  top: 0;
+  padding: 15px 20px;
+  line-height: 0.9;
+  top: 63%;
+  left: 10%;
+  background: rgba(82, 82, 82, 0.4);
 }
 
 .fourth_text {
-  position: absolute;
-  top: 0;
+  padding: 32px;
+  top: 63%;
+  right: 10%;
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .fiveth_text {
+  padding: 20px 70px;
+  left: 5%;
+  width: 200px;
+  bottom: 6%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* trends */
+
+.trends {
+  margin-bottom: 85px;
+  background: #f3f3f3;
+}
+
+.trends_container {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.trends_title {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 86px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 55px;
+  position: relative;
+}
+
+.trends_title::before {
+  content: " ";
+  text-decoration: none;
   position: absolute;
-  top: 0;
+  width: 305px;
+  height: 100%;
+  transform: translate(0, 20%);
+  border-bottom: solid 1px #df96b3;
+}
+
+.trends_text {
+  width: 1200px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  padding-bottom: 40px;
+}
+
+/* trends_grid */
+
+.trends_grid {
+  margin: 0 auto 115px;
+  width: 1200px;
+  display: grid;
+  grid-template-areas:
+    "one two"
+    "three four"
+    "five six";
+}
+
+.first {
+  grid-area: one;
+  background: #f3f3f3;
+}
+
+.second {
+  grid-area: two;
+}
+
+.third {
+  grid-area: three;
+}
+
+.fourth {
+  grid-area: four;
+  background: #f3f3f3;
+}
+
+.fifth {
+  grid-area: five;
+  background: #f3f3f3;
+}
+
+.sixth {
+  grid-area: six;
+}
+
+.trend_container {
+  padding: 20px;
+}
+
+
+.trends_grid img {
+  width: 565px;
+  height: 405px;
+}
+
+.trends_grid h4 {
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+
+
+
+/* footer */
+
+.grey_line_footer {
+  height: 31px;
+  background: #e2e1e1;
+}
+
+.footer_container {
+  padding: 22px 0 42px; 
+  width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list_footer {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.list_footer img {
+  padding-right: 41px;
+}
+
+.logo_footer {
+  padding-right: 0px;
+}
+
+.footer_title {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 86px;
+  color: #e2e1e1;
+}
+
+
+.footer_credits{
+  background: #E2E1E1;
+}
+
+.credits_list {
+  padding: 50px 0 70px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.credits_list a{
+  align-items: center;
+  font-family: "Playfair Display";
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.copyrights{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-family: "Playfair Display";
+  font-size: 15px;
+  color: #000000;
+  padding-bottom: 30px;
 }
